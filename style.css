@@ -27,24 +27,52 @@ h1{
     display: flex;
     gap: 50px;
 }
-#gridDisplayContainer{
-    height: 500px;
-    width: 500px;
-    border: 2px solid
-}
 
 #buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:5px;
+    gap:10px;
 }
 
+
 #buttons button, input{
-    width: 100px;
+    width: 120px;
     border: none;
     border-radius: 10px;
     height: 40px;
-    width: 100;
+    background-color: #969a97;
+    font-weight: bold;
+    font-size:1.2rem;
+    cursor: pointer;
 }
+
+#buttons button:hover, input:hover{
+    background-color: #434443b9;
+    transform:scale(1.1);
+    transition: all 0.3 ease;
+}
+
+#gridDisplayContainer{
+    height: 500px;
+    width: 500px;
+    box-shadow: 10px 10px 20px,
+                20px 20px 30px;
+}
+
+#colorPicker{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    accent-color: black;
+}
+
+#gridSizeRangeDisplay, #gridSizeTextDisplay{
+    accent-color:black;
+    font-size: 1.1rem;
+}
+
+
+
