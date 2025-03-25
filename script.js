@@ -40,10 +40,15 @@ const createGrid = function(size){
         box.style.border = "1px solid black";
         box.style.width = boxSize +"px";
         box.style.height = boxSize + "px";
+        box.style.opacity = "0.2";
 
         gridContainerDisplay.appendChild(box);
     };
+
 }
 
+gridSizeRangeDisplay.addEventListener("input",function(){
+    let size = parseFloat(this.value, 10);
+    if(size > 1 && size < 64) createGrid(size);
+});
 
-createGrid(16);
