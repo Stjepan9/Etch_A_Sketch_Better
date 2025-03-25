@@ -16,6 +16,7 @@ h1{
     padding: 30px;
     padding-left: 150px;
     text-shadow: 2px 2px 10px black;
+
 }
 
 #content{
@@ -52,6 +53,10 @@ h1{
     background-color: #434443b9;
     transform:scale(1.1);
     transition: all 0.3 ease;
+}
+
+#buttons button:active, input:active{
+    background-color: #262726ce;
 }
 
 #gridDisplayContainer{
